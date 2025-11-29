@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up | Schemely</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<!-- Floating Background -->
+<div class="flowers-bg">
+  <div class="flower" style="top: 10%; left: 15%;">💠</div>
+  <div class="flower" style="top: 25%; left: 70%;">🌸</div>
+</div>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">Schemely</div>
+  <nav id="nav-links">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="recommend.html">Find Policy</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="sign-up.html" class="active">Create Account</a></li>
+    </ul>
+  </nav>
+  <div class="menu-icon" id="menu-icon">☰</div>
+</header>
+
+<!-- SIGNUP SECTION -->
+<section class="login-section popup">
+  <h1>Create <span>Your Account</span></h1>
+
+  <!-- FORM styled exactly like login form -->
+  <form class="signup-form" style="
+        max-width: 450px;
+        margin: 0 auto;
+        background: white;
+        padding: 45px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+  ">
+    <input type="text" placeholder="Full Name" required
+      style="padding: 14px; border-radius: 8px; border: 1px solid #ccc;">
+
+    <input type="email" placeholder="Enter Email" required
+      style="padding: 14px; border-radius: 8px; border: 1px solid #ccc;">
+
+    <input type="password" placeholder="Create Password" required
+      style="padding: 14px; border-radius: 8px; border: 1px solid #ccc;">
+
+    <button class="btn" style="width: 100%;">Sign Up</button>
+
+    <p class="register-text" style="text-align: center;">
+      Already have an account? <a href="login.html">Login</a>
+    </p>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Schemely. All rights reserved.</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
