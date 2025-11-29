@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Your Policy | Schemely</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- Floating Blue Flowers Background -->
+<div class="flowers-bg">
+  <div class="flower" style="top: 10%; left: 15%;">💠</div>
+  <div class="flower" style="top: 25%; left: 70%;">🌸</div>
+  <div class="flower" style="top: 60%; left: 30%;">💠</div>
+  <div class="flower" style="top: 75%; left: 80%;">🌼</div>
+  <div class="flower" style="top: 50%; left: 50%;">💠</div>
+  <div class="flower" style="top: 85%; left: 20%;">🌸</div>
+</div>
+
+<!-- Navbar MUST be before page header -->
+<header class="navbar">
+  <div class="logo">Schemely</div>
+  <nav id="nav-links">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="recommend.html" class="active">Find Your Policy</a></li>
+      <li><a href="login.html">Login</a></li>
+       <li><a href="sign-up.html">Create Account</a></li>
+    </ul>
+  </nav>
+  <div class="menu-icon" id="menu-icon">☰</div>
+</header>
+
+<!-- Page Header -->
+<section class="page-header">
+  <h1>Find Your Policy</h1>
+  <p class="page-subtext">
+    Tell us about yourself and let Schemely recommend the best government schemes for you.
+  </p>
+</section>
+
+<!-- Form Section -->
+<form class="recommend-form">
+  <div class="form-grid">
+
+    <!-- AGE -->
+    <div class="input-group">
+      <label>Age *</label>
+      <input type="number" placeholder="Enter your age" required>
+    </div>
+
+    <!-- GENDER -->
+    <div class="input-group">
+      <label>Gender *</label>
+      <select required>
+        <option value="" disabled selected>Select gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="input-group">
+      <label>Education Level *</label>
+      <select required>
+        <option value="" disabled selected>Select education</option>
+        <option>Class 8</option>
+        <option>Class 10</option>
+        <option>Class 12</option>
+        <option>Graduate</option>
+        <option>Postgraduate</option>
+        <option>PhD</option>
+      </select>
+    </div>
+
+    <!-- AREA TYPE -->
+    <div class="input-group">
+      <label>Area Type *</label>
+      <select required>
+        <option value="" disabled selected>Select area type</option>
+        <option>Urban</option>
+        <option>Rural</option>
+      </select>
+    </div>
+
+    <!-- STATE LIST -->
+    <div class="input-group">
+      <label>State *</label>
+      <select required>
+        <option value="" disabled selected>Select state</option>
+
+        <!-- States -->
+        <option>Andhra Pradesh</option>
+        <option>Arunachal Pradesh</option>
+        <option>Assam</option>
+        <option>Bihar</option>
+        <option>Chhattisgarh</option>
+        <option>Goa</option>
+        <option>Gujarat</option>
+        <option>Haryana</option>
+        <option>Himachal Pradesh</option>
+        <option>Jharkhand</option>
+        <option>Karnataka</option>
+        <option>Kerala</option>
+        <option>Madhya Pradesh</option>
+        <option>Maharashtra</option>
+        <option>Manipur</option>
+        <option>Meghalaya</option>
+        <option>Mizoram</option>
+        <option>Nagaland</option>
+        <option>Odisha</option>
+        <option>Punjab</option>
+        <option>Rajasthan</option>
+        <option>Sikkim</option>
+        <option>Tamil Nadu</option>
+        <option>Telangana</option>
+        <option>Tripura</option>
+        <option>Uttar Pradesh</option>
+        <option>Uttarakhand</option>
+        <option>West Bengal</option>
+
+        <!-- Union Territories -->
+        <option>Andaman & Nicobar Islands</option>
+        <option>Chandigarh</option>
+        <option>Dadra & Nagar Haveli</option>
+        <option>Daman & Diu</option>
+        <option>Delhi</option>
+        <option>Jammu & Kashmir</option>
+        <option>Ladakh</option>
+        <option>Lakshadweep</option>
+        <option>Puducherry</option>
+      </select>
+    </div>
+
+    <!-- TAGS -->
+    <div class="input-group full">
+      <label>What describes you? (Optional)</label>
+
+      <div class="tags-grid">
+        <button type="button" class="tag-btn">Student</button>
+        <button type="button" class="tag-btn">Unemployed</button>
+        <button type="button" class="tag-btn">Youth</button>
+        <button type="button" class="tag-btn">Women</button>
+        <button type="button" class="tag-btn">Entrepreneur</button>
+        <button type="button" class="tag-btn">Farmer</button>
+        <button type="button" class="tag-btn">Senior Citizen</button>
+        <button type="button" class="tag-btn">PWD</button>
+        <button type="button" class="tag-btn">SC/ST/OBC</button>
+        <button type="button" class="tag-btn">Migrant Worker</button>
+        <button type="button" class="tag-btn">Self-Employed</button>
+        <button type="button" class="tag-btn">MSME</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="btn-container">
+    <button type="submit" class="btn">Find Schemes</button>
+    <button type="reset" class="btn secondary">Reset</button>
+  </div>
+</form>
+<!-- RESULTS SECTION -->
+<section id="results-section" class="results-section" style="display:none;">
+
+  <div class="results-header">
+    <h2 id="results-count">Results will appear here...</h2>
+
+    <button id="download-pdf" class="btn secondary" 
+            style="display:none; padding:10px 20px;">
+        Download PDF
+    </button>
+  </div>
+
+  <div id="cards-grid" class="cards-grid"></div>
+
+</section>
+
+
+<footer>
+  <p>© 2025 Schemely. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
